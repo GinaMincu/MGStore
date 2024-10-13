@@ -34,4 +34,6 @@
 
 
 ## .env file shouldn't be included in the github
-REACT_APP_PUBLIC_URL='https://dummyjson.com'
+
+You can use yarn or npm to install dependecies! 
+I started by using yarn, but I had some problems with it and I switched to npm
