@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+## Acceptance criteria
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [ ] Product list
+    - [ ] display products as cards, including product image, title, description, star rating, price, and discount (if applicable)
+    - [ ] set pagination to display 20 cards per page, with infinite scroll to load more
+    - [ ] add to cart & favorites buttons
+- [ ] Product viewer
+  - [ ] clicking a product in the list will display it in a larger viewer on the right
+  - [ ] include product image, title, price, discount, full description, dimensions, weight
+  - [ ] user can add the product to the Cart or Favorites from this viewer
+- [ ] Cart dropdown
+  - [ ] clicking icon will display cart products with image, title, quantity
 
-## Available Scripts
+- [ ] Favorites Dropdown
+  - [ ] clicking the icon will display favorites products with image, title
 
-In the project directory, you can run:
 
-### `yarn start`
+## Bonus (Optional)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [ ] real-time search bar that filters the product list as the user types
+- [ ] add to cart button that moves the item from the favorites list to the cart and removes it from favorites
+- [ ] list all the reviews in a carousel in product viewer
+- [ ] allow the user to expand product images in a full-screen modal. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## My to do list (Optional)
+- [ ] using React lightbox, expand product images in a full-screen modal
+- [ ] replacing all <h#>, <p> with Typography element
+- [ ] working more on the desgin and responsivess
+- [ ] adding the check for the star button to fill it and be filled after a product is in favourites list
+- [ ] add tests
+- [ ] make naming a bit better
+- [ ] fix bugs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## .env file shouldn't be included in the github
+REACT_APP_PUBLIC_URL='https://dummyjson.com'
