@@ -1,18 +1,17 @@
 ## Acceptance criteria
 
-- [ ] Product list
-    - [ ] display products as cards, including product image, title, description, star rating, price, and discount (if applicable)
-    - [ ] set pagination to display 20 cards per page, with infinite scroll to load more
-    - [ ] add to cart & favorites buttons
-- [ ] Product viewer
-  - [ ] clicking a product in the list will display it in a larger viewer on the right
-  - [ ] include product image, title, price, discount, full description, dimensions, weight
-  - [ ] user can add the product to the Cart or Favorites from this viewer
-- [ ] Cart dropdown
-  - [ ] clicking icon will display cart products with image, title, quantity
-
-- [ ] Favorites Dropdown
-  - [ ] clicking the icon will display favorites products with image, title
+- [x] Product list
+    - [x] display products as cards, including product image, title, description, star rating, price, and discount (if applicable)
+    - [x] set pagination to display 20 cards per page, with infinite scroll to load more
+    - [x] add to cart & favorites buttons
+- [x] Product viewer
+  - [x] clicking a product in the list will display it in a larger viewer on the right
+  - [x] include product image, title, price, discount, full description, dimensions, weight
+  - [x] user can add the product to the Cart or Favorites from this viewer
+- [x] Cart dropdown
+  - [x] clicking icon will display cart products with image, title, quantity
+- [x] Favorites Dropdown
+  - [x] clicking the icon will display favorites products with image, title
 
 
 ## Bonus (Optional)
@@ -23,7 +22,8 @@
 - [ ] allow the user to expand product images in a full-screen modal. 
 
 
-## My to do list (Optional)
+## My to do list (to be continued...)
+- [ ] doing all the optionals
 - [ ] using React lightbox, expand product images in a full-screen modal
 - [ ] replacing all <h#>, <p> with Typography element
 - [ ] working more on the desgin and responsivess
