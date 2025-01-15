@@ -72,10 +72,8 @@ const ProductView = (props: ProductViewProps) => {
 
         <Stack>
           <img
-            src={(currentProduct && currentProduct.images[0])}
-            alt={
-              (currentProduct && currentProduct.id.toString())
-            }
+            src={currentProduct && currentProduct.thumbnail}
+            alt={currentProduct && currentProduct.id.toString()}
             style={{ width: "500px", height: "300px", objectFit: "contain" }}
           ></img>
         </Stack>

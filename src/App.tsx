@@ -15,10 +15,10 @@ export interface ProductWithQuantity {
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
-  const { items, error } = useSelector((state: RootState) => state.products);
+  const { items } = useSelector((state: RootState) => state.products);
 
   useEffect(() => {
-    dispatch(fetchProducts({ limit: 200, skip: 0 }));
+    dispatch(fetchProducts({}));
   }, []);
 
   const [currentProductId, setCurrentProductId] = useState(0);
@@ -37,7 +37,6 @@ function App() {
   const [cartProducts, setCartProducts] = useState<ProductWithQuantity[]>([]);
 
   const handleAddProducts = (btn: string) => {
-
     if (currentProduct) {
       if (btn === "favourite") {
         setFavouriteProducts((prevProds) => {
@@ -115,10 +114,7 @@ function App() {
             margin: 0,
           }}
         >
-          <ProductsList
-            setCurrentProductId={setCurrentProductId}
-            products={items}
-          />
+          <ProductsList setCurrentProductId={setCurrentProductId} />
         </Stack>
         <Card>
           <Stack
